@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mukhammadsodikh</title>
+</head>
+<body>
+    <Center>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav></Center>
+    <header>
+        <div class="container">
+            <div class="header">
+            <div class="img">
+            <img src="my.jpg" alt=""></div>
+            <div class="containerchild">
+            <h1 class="h1">Muxammadsodiq Maxammadjonov</h1></div></div>
+            <p>Mobile developer | Creative Thinker | Lifelong Learner</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Andijon viloyati Digital City academiyasining flutter yo'nalishi o'quvchisi</p>
+        <p>Qo'shimcha Frontend,Backend,Android va 3d Modelingda ozgina tajriba, erishilgan yutuqlar hali yo'q</p>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="container">
+        <h2>Resume</h2>
+        <p>👤 Muxammadsodiq
+            📍 [Andijon eski sh..,Tinchlik ko'chasi...]<br>
+            📞 Tel: <a href="tel:+998885827231" >+998 88 582 72 31</a><br>
+            📧 Email: <a href="mailto:maxammatjonov.06@gmail.com">maxammatjonov.06@gmail.com</a><br>
+            <br><br>
+            🎓 Ta'lim<br>
+            [Digital City]<br>
+            [Mobile dewelopeer]<br><br>
+            🚀 Malakalar va Bilimlar<br>
+            - Dasturlash tillari: [html css,java,kotlin,python,dart]<br>
+            - Dizayn: [Canva,Figma]<br><br>
+            
+            🏆 Muvaffaqiyatlar<br>
+            - Ishda xizmat ko'rsatishda 20% oshish.<br>
+            - Yangi loyihalarni boshlash va o'rnatishda muvaffaqiyatli ishlash.<br><br>
+            
+            📚 Sertifikatlar<br>
+            - [Yo'q]<br><br><br>
+            
+            
+            
+            📅 Oxirgi yangilanish: [23.11.2023]</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container">
+        <h2>Portfolio</h2>
+        <a href="https://github.com/mukhammadsodikh" class="carda">
+            <div class="card">
+                <Center>
+                    <p>Portfolio uchun bosing</p>
+                </Center>
+            </div>
+        </a>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="container">
+        <h2>Blog</h2>
+        <a href="https://t.me/@Mukhammadsodikh_mobile_developer" class="carda">
+            <div class="card">
+                <Center>
+                    <p>Blog uchun bosing</p>
+                </Center>
+            </div>
+        </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <a href="https://t.me/@repaperr" class="carda">
+            <div class="telegram">
+                <Center>
+                    <p>Telegram</p>
+                </Center>
+            </div>
+        </a>
+        <a href="https://www.instagram.com/mukhammadsodikh_" class="carda">
+            <div class="instagram">
+                <Center>
+                    <p>Instagram</p>
+                </Center>
+            </div>
+        </a>
+        
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Your Name. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('nav a');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
